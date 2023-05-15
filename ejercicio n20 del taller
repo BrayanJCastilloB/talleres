@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+ <h3>MIS JUGADORES FAVORITOS🏆</h3>
+ 
+ <img src="misjugadores.jpg" width="350" height="250"/>
+ 
+ <h3>DETALLES DE MIS JUGADORES FAVORITOS⚽ </h3>
+ 
+ <table border="5">
+   <thead>
+       <tr>
+    <th>Nombre</th>
+    <th>Equipo</th>
+    <th>Valor</th>
+  </tr>
+   </thead>
+     <tr>
+    <td>Cristiano Ronaldo</td>
+    <td>alnassar</td>
+    <td>20,00 mill. €</td>
+  </tr>
+  <tr>
+    <td>Leonel Messi</td>
+    <td>Paris Saint Germain</td>
+    <td>45,00 mill. €</td>
+  </tr>
+ <tr>
+   <td>Kylian Mbappé </td>
+   <td>Paris Saint Germain</td>
+   <td>180,00 mill. €</td>
+ </tr>  
+  <tr>
+   <td>Erling Haaland</td>
+   <td>Manchester City</td>
+   <td>170,00 mill. €</td>
+ </tr>  
+ 
+ </table>
+ <h3>TOP 5 JUGADORES CON MAS COLES EN LA ACTUALIDAD!</h3>
+ 
+ <ol>
+   <li>Cristiano Ronaldo |Portugal| (835 goles)</li>
+   <li>Josef Bican |Austria| (805 goles)</li>
+   <li>Leonel Messi |Argentina| (805 goles)</li>
+   <li>Pelé |Brasil| (765 goles)</li>
+   <li>Romario |Brasil| (753 goles)</li>
+ </ol>
+ 
+ <p> <strong>HIPERVÍNCULOS:</strong> </p>
+ 
+ 
+ <a href="camiloandres200419@gmail.com">¿Quieres más información? Escribeme dando click aquí!</a>
+ 
+<br><br>
+
+<a href="Google.com">Google.com</a>
+ 
+</body>
+</html>
