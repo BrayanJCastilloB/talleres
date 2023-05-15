@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+   <meta charset="UTF-8">
+<head>
+	<title>Mi página web</title>
+	<style>
+		header {
+			background-color: #ffa500;
+			padding: 20px;
+		}
+		section {
+			background-color: #ff69b4;
+			padding: 20px;
+		}
+		article {
+			background-color: #00bfff;
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+		footer {
+			background-color: #008000;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Bienvenidos a mi página web</h1>
+		<p>Este es el header</p>
+	</header>
+	<section>
+		<article>
+			<h2>Primer artículo</h2>
+			<p>Este es el primer artículo</p>
+		</article>
+		<article>
+			<h2>Segundo artículo</h2>
+			<p>Este es el segundo artículo</p>
+		</article>
+	</section>
+	<footer>
+		<p>Este es el footer</p>
+	</footer>
+</body>
+</html>
+
+
+2. Página web con header, section y footer con texto aleatorio y un segundo article con imagen de fondo:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi página web</title>
+	<style>
+		header {
+			background-color: #ffa500;
+			padding: 20px;
+		}
+		section {
+			background-color: #ff69b4;
+			padding: 20px;
+		}
+		article {
+			background-color: #00bfff;
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+		article:last-child {
+			background-image: url('https://via.placeholder.com/500x500');
+			background-size: cover;
+			background-repeat: no-repeat;
+			padding: 0;
+		}
+		footer {
+			background-color: #008000;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Bienvenidos a mi página web</h1>
+		<p>Este es el header</p>
+	</header>
+	<section>
+		<article>
+			<h2>Primer artículo</h2>
+			<p>Este es el primer artículo</p>
+		</article>
+		<article>
+			<h2>Segundo artículo</h2>
+			<p>Este es el segundo artículo</p>
+		</article>
+	</section>
+	<footer>
+		<p>Este es el footer</p>
+	</footer>
+</body>
+</html>
+
+
+En este segundo ejemplo, hemos utilizado el selector `:last-child` para aplicar estilos específicos al último elemento `article` dentro del `section`. Además, hemos definido una imagen de fondo utilizando la propiedad `background-image`. La imagen se ajusta al tamaño del elemento con `background-size: cover` y no se repite con `background-repeat: no-repeat`. También hemos eliminado el padding del
+ 
+ Para modificar el ejercicio anterior para que los `article` y la `section` tengan el mismo padding y para que entre el `header`, la `section`, los `article` y el `footer` haya la misma separación (margin), podemos hacer lo siguiente:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi página web</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		
+		header {
+			background-color: #ffa500;
+			padding: 20px;
+		}
+		
+		section {
+			background-color: #ff69b4;
+			padding: 20px;
+			margin: 20px;
+		}
+		
+		article {
+			background-color: #00bfff;
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+		
+		article:last-child {
+			background-image: url('https://via.placeholder.com/500x500');
+			background-size: cover;
+			background-repeat: no-repeat;
+			padding: 0;
+		}
+		
+		footer {
+			background-color: #008000;
+			padding: 20px;
+			margin: 20px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Bienvenidos a mi página web</h1>
+		<p>Este es el header</p>
+	</header>
+	<section>
+		<article>
+			<h2>Primer artículo</h2>
+			<p>Este es el primer artículo</p>
+		</article>
+		<article>
+			<h2>Segundo artículo</h2>
+			<p>Este es el segundo artículo</p>
+		</article>
+	</section>
+	<footer>
+		<p>Este es el footer</p>
+	</footer>
+</body>
+</html>
+
+
+Aquí hemos agregado algunos estilos adicionales al `body` para eliminar el margen predeterminado y establecer una fuente predeterminada. Además, hemos agregado un margen de 20 píxeles alrededor de la `section` y el `footer` para crear la misma separación entre los elementos. Finalmente, hemos eliminado el margen inferior del `article` con la propiedad `margin-bottom` y hemos mantenido el mismo relleno para todos los elementos.
+ 
+ Para modificar la estructura anterior y crear una página web de información del CFGM de Sistemas Microinformáticos y Redes que incluya una cabecera con el título del ciclo, un enlace al sitio web del ministerio y el logo del ISEP-CEU, así como un subtítulo con el nombre del tutor y un enlace a su perfil, podemos hacer lo siguiente:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Información del CFGM de Sistemas Microinformáticos y Redes</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		
+		header {
+			background-color: #ffa500;
+			padding: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		
+		h1 {
+			margin: 0;
+		}
+		
+		.logo {
+			height: 40px;
+		}
+		
+		.tutor {
+			background-color: #ff69b4;
+			padding: 20px;
+			margin: 20px;
+		}
+		
+		.tutor a {
+			color: #fff;
+			text-decoration: none;
+		}
+		
+		footer {
+			background-color: #008000;
+			padding: 20px;
+			margin: 20px;
+			color: #fff;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1><a href="https://www.educacionyfp.gob.es/" target="_blank">CFGM de Sistemas Microinformáticos y Redes</a></h1>
+		<a href="https://www.isep.ceu.es/" target="_blank"><img src="https://via.placeholder.com/150x50?text=ISEP-CEU" alt="Logo ISEP-CEU" class="logo"></a>
+	</header>
+	<section class="tutor">
+		<h2>Tutor: Joel Quintero</h2>
+		<p>Para más información sobre el tutor, visita su perfil en <a href="#">nuestra web</a>.</p>
+	</section>
+	<footer>
+		<p>CFGM de Sistemas Microinformáticos y Redes - ISEP-CEU 2023</p>
+	</footer>
+</body>
+</html>
+```
+
+Hemos agregado un `header` que incluye el título del ciclo enlazado al sitio web del Ministerio de Educación y Formación Profesional, así como el logo del ISEP-CEU enlazado a su sitio web. Para lograr esto, hemos utilizado la propiedad `display: flex` para alinear los elementos horizontalmente y la propiedad `justify-content: space-between` para que el título y el logo estén en extremos opuestos del `header`.
+
+También hemos agregado una sección para el tutor, que incluye su nombre y un enlace a su perfil en nuestra web.
+
+Finalmente, hemos agregado un `footer` con información adicional y hemos aplicado algunos estilos para personalizar la apariencia de la página.
